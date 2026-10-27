@@ -5,6 +5,13 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-10-27
+
+### Changed
+
+- Tracks `vat-return 0.1.7` (the converged pin set). No behavioural change.
+
+
 ## [0.1.2] - 2026-10-27
 
 ### Changed

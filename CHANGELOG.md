@@ -5,6 +5,13 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-27
+
+### Changed
+
+- Tracks `vat-return 0.1.5` — the estate graph's vat-rules convergence pin chain. No behavioural change.
+
+
 ## [0.1.0] - 2026-10-25
 
 Initial release.

@@ -1,6 +1,6 @@
 [package]
 name = "vat-mtd"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.85"
 description = "HMRC Making Tax Digital VAT bridge — the typed submit/obligations contract, fraud-prevention headers, and the mapping from vat-return boxes"
@@ -10,7 +10,7 @@ keywords = ["hmrc", "mtd", "vat", "accounting", "finance"]
 categories = ["finance", "api-bindings"]
 
 [dependencies]
-vat-return = "=0.1.2"
+vat-return = "=0.1.5"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 

@@ -5,6 +5,13 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-10-27
+
+### Changed
+
+- Tracks `vat-return 0.1.6` (ap-kit 0.1.5 convergence). No behavioural change.
+
+
 ## [0.1.1] - 2026-10-27
 
 ### Changed

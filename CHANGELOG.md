@@ -5,6 +5,13 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
+## [0.1.6] - 2026-10-29
+
+### Changed
+
+- Tracks `vat-return 0.1.10` (the invoice-kit 1.2.0 convergence). No behavioural change.
+
+
 ## [0.1.5] - 2026-10-29
 
 ### Changed

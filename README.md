@@ -1,6 +1,6 @@
 # vat-mtd
 
-HMRC Making Tax Digital (VAT) — the typed submission contract, mapped from
+HMRC Making Tax Digital (VAT); the typed submission contract, mapped from
 [`vat-return`](https://crates.io/crates/vat-return)'s boxes.
 
 ## What this crate is, and what it deliberately is not
@@ -19,8 +19,8 @@ lines at the call site and the contract's tests are fixture-exact.
 
 HMRC's VAT-amount fields carry **two decimal places**; the value fields
 (boxes 6 and 7) are **whole pounds** by filing law. Minor units convert to
-decimal strings exactly — integer division and a zero-padded remainder, never
-a float — and a value field carrying pence is **refused**, because silently
+decimal strings exactly; integer division and a zero-padded remainder, never
+a float; and a value field carrying pence is **refused**, because silently
 truncating 50p is a misstatement on a filing.
 
 ## The fraud-prevention headers
@@ -28,7 +28,7 @@ truncating 50p is a misstatement on a filing.
 Every MTD call carries `Gov-Client-*` / `Gov-Vendor-*` headers whose required
 set depends on the declared connection method. HMRC validates the *shape* of
 each value and rejects the call with an error that does not name the offending
-header — so the shapes (UUID device IDs, `vendor=x.y.z` versions) are checked
+header; so the shapes (UUID device IDs, `vendor=x.y.z` versions) are checked
 here, where the error can name them.
 
 ## Deliberate semantics
@@ -37,7 +37,7 @@ here, where the error can name them.
   digital records with digital links, and claiming otherwise is not a
   configuration.
 - EU dispatches/acquisitions (the triangular-supply siblings of boxes 6 and 7)
-  are explicit parameters — `vat-return` computes a UK-scope return, and
+  are explicit parameters; `vat-return` computes a UK-scope return, and
   inventing zeros here would under-declare for businesses that have them.
 - A non-GBP return is the wrong return, not a conversion problem.
 
